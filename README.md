@@ -3,7 +3,7 @@ custom sensor scripts for prtg
 
 Usage :
 1. Upload the script to custom sensor folder
-2. Add XML Sensor 
+2. Add XML Sensor
 3. User parameters as following - 
 
 VIP_Traffic '%host' 'snmp_community_name' '2c' '/common/www.example.com' 'ver11'
