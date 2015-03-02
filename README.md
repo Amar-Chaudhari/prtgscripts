@@ -13,5 +13,5 @@ Parameter Explanation -
 2. '%host' - %host will take hostname of device , if not enter hostname of balancer
 3. snmp_community_name - snmp community name specified in the balancer.
 4. 2c - snmp version , currently supports ONLY 2c
-5. /common/www.example.com - VIP name in the balancer , script will automatically conver it to dotted format
-5. ver11 - BIGIP OS version , Currently supports v10 & v11 ( version 10 requires 1.4 added to standard oid)
+5. /common/www.example.com - VIP name in the balancer , script will automatically convert it to dotted format
+5. ver11 - BIGIP OS version , Currently supports v10 & v11 ( version 10 requires 1.4 added to standard OID)
