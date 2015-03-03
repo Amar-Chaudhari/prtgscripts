@@ -1,4 +1,4 @@
-# F5 BIG-IP LTM VIP,Session,Node sensor creation
+# F5 BIG-IP LTM VIP,Session,Node Sensor Creator
 
 XML Sensor to automatically create sensors for new VIP , Session , Nodes on balancer
 
