@@ -1,18 +1,36 @@
-# prtgscripts
-custom sensor scripts for prtg
+# F5 BIG-IP LTM VIP,Session,Node sensor creation
 
-Usage :
-1. Upload the script to custom sensor folder
-2. Add XML Sensor
-3. User parameters as following - 
+XML Sensor to automatically create sensors for new VIP , Session , Nodes on balancer
 
-VIP_Traffic '%host' 'snmp_community_name' '2c' '/common/www.example.com' 'ver11'
+## Installation
+1. Create XML sensor with :
+   sensor name - Auto Add things
+   Parameters - '%host' 'ver11' '%deviceid' 'username' 'password' 'Type of Sensors to create'
+   Exe/Script - f5_vip_traffic_adv_custom_auto_create_v4.ps1
+   Timeout - 900 Sec
+2. Create XML Sensor with :
+   sensor name - Dummy
+   Exe/Script - bigip_sesnor.ps1
+   # Keep this sensor paused at all time
+    
 
-Parameter Explanation - 
+## Contributing
 
-1. Sensor Type - VIP_Traffic , Pool_Traffic , Node_Traffic , VIP_Session , Pool_Session , Node_Session
-2. '%host' - %host will take hostname of device , if not enter hostname of balancer
-3. snmp_community_name - snmp community name specified in the balancer.
-4. 2c - snmp version , currently supports ONLY 2c
-5. /common/www.example.com - VIP name in the balancer , script will automatically convert it to dotted format
-5. ver11 - BIGIP OS version , Currently supports v10 & v11 ( version 10 requires 1.4 added to standard OID)
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## Limitations
+
+Sensor Type - VIP_Traffic , Pool_Traffic , Node_Traffic , VIP_Session , Pool_Session , Node_Session
+ver11 - BIGIP OS version , Currently supports v10 & v11 ( version 10 requires 1.4 added to standard OID)
+
+## Credits
+
+brianaddicks for the prtgshell
+
+## License
+
+TODO: Write license
