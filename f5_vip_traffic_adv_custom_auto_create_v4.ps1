@@ -63,15 +63,6 @@ $dummy_sensorid
 function Get-ascii{
           param([char]$char)
 
-          <#
-          if($char -match "[1-9]")
-          {
-            $val = [int][char]$char
-          }else
-          {
-            $val = [int][char]$char
-          }#>
-
            $val = [int]$char
 
           return $val
