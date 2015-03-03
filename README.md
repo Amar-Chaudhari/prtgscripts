@@ -29,7 +29,7 @@ ver11 - BIGIP OS version , Currently supports v10 & v11 ( version 10 requires 1.
 
 ## Credits
 
-brianaddicks for the prtgshell
+@brianaddicks for the prtgshell
 
 ## License
 
